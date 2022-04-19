@@ -1,9 +1,11 @@
 import './style.scss';
 
+import Intro from 'src/components/Intro';
+
 const Home = () => (
   <>
     <section className="intro">
-      Intro + illustration
+      <Intro />
     </section>
 
     <section className="skills">
