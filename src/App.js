@@ -4,13 +4,17 @@ import { Routes, Route } from 'react-router-dom';
 import './styles/index.scss';
 
 import Layout from 'src/components/Layout';
-import Home from 'src/pages/Home';
-import Portfolio from 'src/pages/Portfolio';
-import About from 'src/pages/About';
+import ScrollTop from 'src/components/ScrollTop';
+import {
+  Home,
+  About,
+  Portfolio,
+} from './pages';
 
 // == Composant
 const App = () => (
   <div className="app">
+    <ScrollTop />
     <Layout>
       <Routes>
         <Route path="/" element={<Home />} exact />
