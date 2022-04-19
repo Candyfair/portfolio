@@ -1,0 +1,17 @@
+@import "../../styles/vars";
+
+.global {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  color: $text;
+}
+
+.content {
+  background-color: antiquewhite;
+  padding: $spacer;
+}
+
+.footer {
+  margin-top: auto;
+}
