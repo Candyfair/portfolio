@@ -37,4 +37,5 @@ html, body {
 body {
   font-family: 'Inter', sans-serif;
   font-weight: 300;
+  background: linear-gradient(180deg, vars.$background 0%, vars.$background-transparent 100%);
 }
