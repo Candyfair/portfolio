@@ -1,0 +1,12 @@
+@import '../../../styles/vars';
+
+.modal-header {
+  width: 100%;
+  padding: $spacer;
+  display: flex;
+  justify-content: flex-start;
+
+  &__arrow {
+    color: $text;
+  }
+}

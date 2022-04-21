@@ -1,10 +1,15 @@
 import './style.scss';
 
+import Navigation from 'src/components/Navigation';
+
+import logo from '../../assets/images/logo.png';
+
 const Header = () => (
   <div className="header">
-    <div className="header__logo">Logo</div>
+    <div className="header__logo"><img src={logo} alt="Logo" /></div>
 
-    <nav className="header__nav">Menu</nav>
+    <Navigation className="header__nav" />
+
   </div>
 );
 
