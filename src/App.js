@@ -5,6 +5,8 @@ import './styles/index.scss';
 
 import Layout from 'src/components/Layout';
 import ScrollTop from 'src/components/ScrollTop';
+import ModalDisplay from './components/ModalDisplay';
+
 import {
   Home,
   About,
@@ -21,6 +23,7 @@ const App = () => (
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/about" element={<About />} exact />
       </Routes>
+      <ModalDisplay />
     </Layout>
   </div>
 );

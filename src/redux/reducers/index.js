@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
-import counter from './counter';
+import modalsReducer from './modals';
 
 export default combineReducers({
-  counter,
+  modals: modalsReducer,
 });

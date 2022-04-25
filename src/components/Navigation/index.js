@@ -1,19 +1,12 @@
 import './style.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisVertical } from '@fortawesome/free-solid-svg-icons';
-import { useState } from 'react';
 
-import MobileMenu from 'src/components/Modals/MobileMenu';
+import { useDispatch } from 'react-redux';
+import { setModal } from '../../redux/actions/modals';
 
 const Navigation = () => {
-  const [showMenu, setShowMenu] = useState(false);
-
-  let menu;
-  let menuMask;
-
-  if (showMenu) {
-    menu = <MobileMenu />;
-  }
+  const dispatch = useDispatch();
 
   return (
     <nav>
@@ -23,11 +16,10 @@ const Navigation = () => {
           size="xl"
           fixedWidth
           inverse
-          onClick={() => setShowMenu(!showMenu)}
+          onClick={() => dispatch(setModal(true, 'menu'))}
         />
       </span>
 
-      {menu}
     </nav>
   );
 };
