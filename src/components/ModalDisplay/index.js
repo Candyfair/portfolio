@@ -4,6 +4,7 @@ import { setModal } from '../../redux/actions/modals';
 
 import ModalHeader from './ModalHeader';
 import MobileMenu from './MobileMenu';
+import Contact from './Contact';
 
 const ModalDisplay = () => {
   const dispatch = useDispatch();
@@ -19,6 +20,7 @@ const ModalDisplay = () => {
       <section className="menu">
         <ModalHeader />
         <MobileMenu />
+        <Contact />
 
       </section>
 
