@@ -1,18 +1,14 @@
+@import '../../../styles/mixins';
+
 .menu-elem {
+  @include flexCenter(space-between, center, column);
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   font-weight: 300;
 
   &-titles {
     font-size: 2.5rem;
     height: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    @include flexCenter(space-between, center, column);
   }
 
   &-footer {
@@ -23,10 +19,7 @@
     margin-bottom: 20px;
     
     &-icons {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
+      @include flexCenter(center, center, row);
     }
 
     &-icon {

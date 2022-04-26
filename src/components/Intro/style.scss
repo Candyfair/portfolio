@@ -1,8 +1,7 @@
+@import '../../styles/mixins';
+
 .intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flexCenter(center, center, column);
   font-family: 'Inconsolata', monospace;
   
   &__title {
