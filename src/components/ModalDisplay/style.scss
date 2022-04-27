@@ -1,6 +1,13 @@
+@import '../../styles/mixins';
+@import '../../styles/vars';
+
 .menu {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  @include flexCenter(flex-start, center, column);
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: $white;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
 }

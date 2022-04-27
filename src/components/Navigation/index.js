@@ -10,7 +10,7 @@ const Navigation = () => {
 
   return (
     <nav>
-      <span>
+      <span className="menu-icon">
         <FontAwesomeIcon
           icon={faEllipsisVertical}
           size="xl"

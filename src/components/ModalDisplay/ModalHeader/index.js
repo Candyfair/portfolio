@@ -20,5 +20,6 @@ const ModalHeader = () => {
       </span>
     </div>
   );
-}
+};
+
 export default ModalHeader;
