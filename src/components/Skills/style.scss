@@ -1,0 +1,45 @@
+@import '../../styles/vars';
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: left;
+  font-size: 18px;
+  background: $white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 75%;
+}
+
+// Container for pagination bullets
+.my-custom-pagination-div {
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.swiper-pagination-bullet {
+  background: $story-bg;
+}
+
+// Arrows
+.swiper-button-next-unique, .swiper-button-prev-unique {
+  color: $story-bg;
+  z-index: 50;
+}
+
+.swiper-button-next-unique {
+  position: absolute;
+  right: -8px;
+  top: 40%;
+}
+
+.swiper-button-prev-unique {
+  position: absolute;
+  left: -8px;
+  top: 40%;
+}
+
+

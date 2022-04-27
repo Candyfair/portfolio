@@ -1,6 +1,7 @@
 import './style.scss';
 
 import Intro from 'src/components/Intro';
+import Skills from '../../components/Skills';
 
 const Home = () => (
   <>
@@ -9,7 +10,7 @@ const Home = () => (
     </section>
 
     <section className="skills">
-      My Skills
+      <Skills />
     </section>
 
     <section className="portfolio">
