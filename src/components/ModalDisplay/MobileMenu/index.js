@@ -21,33 +21,41 @@ const MobileMenu = () => {
       </div>
 
       <div className="menu-elem-titles">
-        <h2 onClick={() => {
-          navigate('/');
-          dispatch(setModal(false, 'none'));
-        }}
+        <h2
+          className="menu-elem-titles__link"
+          onClick={() => {
+            navigate('/');
+            dispatch(setModal(false, 'none'));
+          }}
         >
           Skills
         </h2>
 
-        <h2 onClick={() => {
-          navigate('/portfolio');
-          dispatch(setModal(false, 'none'));
-        }}
+        <h2
+          className="menu-elem-titles__link"
+          onClick={() => {
+            navigate('/portfolio');
+            dispatch(setModal(false, 'none'));
+          }}
         >
           Portfolio
         </h2>
 
-        <h2 onClick={() => {
-          navigate('about');
-          dispatch(setModal(false, 'none'));
-        }}
+        <h2
+          className="menu-elem-titles__link"
+          onClick={() => {
+            navigate('about');
+            dispatch(setModal(false, 'none'));
+          }}
         >
           About
         </h2>
 
-        <h2 onClick={() => {
-          dispatch(setModal(true, 'contact'));
-        }}
+        <h2
+          className="menu-elem-titles__link"
+          onClick={() => {
+            dispatch(setModal(true, 'contact'));
+          }}
         >
           Contact
         </h2>

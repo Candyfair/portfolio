@@ -1,4 +1,5 @@
 @import '../../../styles/mixins';
+@import '../../../styles/vars';
 
 .menu-elem {
   @include flexCenter(space-between, center, column);
@@ -9,6 +10,14 @@
     font-size: 2.5rem;
     height: 50%;
     @include flexCenter(space-between, center, column);
+    
+    &__link {
+      cursor: pointer;
+
+      &:hover {
+        color: $primary;
+      }
+    }
   }
 
   &-footer {
