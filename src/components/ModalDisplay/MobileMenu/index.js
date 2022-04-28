@@ -1,11 +1,16 @@
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 
 import './style.scss';
 import { SocialIcon } from 'react-social-icons';
 import icon from '../../../assets/images/iconcandy.png';
 
+import { setModal } from '../../../redux/actions/modals';
+
 const MobileMenu = () => {
   const { element } = useSelector((state) => state.modals);
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   if (element !== 'menu') return null;
 
@@ -16,10 +21,36 @@ const MobileMenu = () => {
       </div>
 
       <div className="menu-elem-titles">
-        <h2>Skills</h2>
-        <h2>Portfolio</h2>
-        <h2>About</h2>
-        <h2>Contact</h2>
+        <h2 onClick={() => {
+          navigate('/');
+          dispatch(setModal(false, 'none'));
+        }}
+        >
+          Skills
+        </h2>
+
+        <h2 onClick={() => {
+          navigate('/portfolio');
+          dispatch(setModal(false, 'none'));
+        }}
+        >
+          Portfolio
+        </h2>
+
+        <h2 onClick={() => {
+          navigate('about');
+          dispatch(setModal(false, 'none'));
+        }}
+        >
+          About
+        </h2>
+
+        <h2 onClick={() => {
+          dispatch(setModal(true, 'contact'));
+        }}
+        >
+          Contact
+        </h2>
       </div>
 
       <div className="menu-elem-footer">

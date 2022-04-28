@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import './style.scss';
 import { SocialIcon } from 'react-social-icons';
 
@@ -33,6 +35,7 @@ const Footer = () => {
           <div className="footer-elem__wrapper__socials__icons">
             <div>
               <SocialIcon
+                url="https://www.linkedin.com/in/candicebfairand/"
                 network="linkedin"
                 bgColor="hsl(0, 0%, 100%)"
                 style={{ height: 36, width: 36 }}
@@ -43,6 +46,7 @@ const Footer = () => {
 
             <div>
               <SocialIcon
+                url="https://github.com/Candyfair"
                 network="github"
                 bgColor="hsl(0, 0%, 100%)"
                 style={{ height: 36, width: 36 }}
@@ -53,6 +57,7 @@ const Footer = () => {
 
             <div>
               <SocialIcon
+                url="https://www.instagram.com/candy.fair/"
                 network="instagram"
                 bgColor="hsl(0, 0%, 100%)"
                 style={{ height: 36, width: 36 }}
@@ -66,7 +71,7 @@ const Footer = () => {
 
         {/* About me button */}
         <div>
-          <button type="button" className="footer-elem__wrapper__about">About me</button>
+          <Link to="/about"><button type="button" className="footer-elem__wrapper__about">About me</button></Link>
         </div>
       </div>
 
