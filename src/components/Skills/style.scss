@@ -1,8 +1,10 @@
 @import '../../styles/vars';
 
+// Slider
 .swiper {
   width: 100%;
   height: 100%;
+  margin-top: 30px;
 }
 
 .swiper-slide {
@@ -12,6 +14,7 @@
   padding: 20px;
   border-radius: 20px;
   width: 75%;
+  height: auto; // Same height to all slides
 }
 
 // Container for pagination bullets
@@ -40,6 +43,42 @@
   position: absolute;
   left: -8px;
   top: 40%;
+}
+
+// Styling of skills components
+.skills {
+
+  &__title {
+    font-weight: 700;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  
+  &__subtitle {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: $primary;
+    margin-bottom: 5px;
+    
+    &::before {
+      display: inline-block;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      font: var(--fa-font-regular);
+      content: "\f02e";
+      margin-right: 9px;
+    }
+  }
+
+  &__details {
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+    line-height: 1.3;
+    margin-left: 25px;
+  }
 }
 
 
