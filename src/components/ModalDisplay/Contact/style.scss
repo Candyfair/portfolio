@@ -1,0 +1,66 @@
+@import '../../../styles/vars';
+@import '../../../styles/mixins';
+
+.contact {
+  @include flexCenter(space-between, center, column);
+  padding-left: 22px;
+  padding-right: 22px;
+  height: 100%;
+
+  &__form-container {
+    @include flexCenter(space-between, center, column);
+    height: 450px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.3;
+    width: 330px;
+  }
+
+  &__form {
+    @include flexCenter(space-between, left, column);
+    font-family: 'Slabo 13px', serif;
+
+    &__labels {
+      color: $secondary;
+      margin-bottom: 5px;
+    }
+
+    &__email, &__message {
+      padding: 12px;
+      border: 1px $secondary solid;
+      border-radius: 5px;
+    }
+    
+    &__email {
+      width: 330px;
+      margin-bottom: $spacer;
+    }
+
+    &__message {
+      width: 330px;
+      height: 140px;
+      margin-bottom: 10px;
+    }
+
+    &__button {
+      float: right;
+      padding: 13px 23px;
+      border: none;
+      background-color: $secondary;
+      color: $white;
+      font-family: 'Inter', serif;
+      font-weight: 800;
+      font-size: 1.2rem;
+      border-radius: 4px;
+    }
+  }
+}
