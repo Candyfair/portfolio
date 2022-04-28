@@ -20,6 +20,8 @@ import {
 } from 'swiper';
 
 import TechSkills from './TechSkills';
+import ProSkills from './ProSkills';
+import SoftSkills from './SoftSkills';
 
 const Skills = () => {
   const params = {
@@ -51,8 +53,8 @@ const Skills = () => {
         className="mySwiper"
       >
         <SwiperSlide className="swiper-slide"><TechSkills /></SwiperSlide>
-        <SwiperSlide className="swiper-slide">Slide 2</SwiperSlide>
-        <SwiperSlide className="swiper-slide">Slide 3</SwiperSlide>
+        <SwiperSlide className="swiper-slide"><ProSkills /></SwiperSlide>
+        <SwiperSlide className="swiper-slide"><SoftSkills /></SwiperSlide>
 
         {/* Swiper navigation arrows */}
         <span className="swiper-button-prev-unique">
