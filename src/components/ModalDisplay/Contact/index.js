@@ -52,6 +52,7 @@ const Contact = () => {
 
           <div>
             <input
+              required
               id="contact__form__message"
               className="contact__form__message"
               type="text"

@@ -1,0 +1,51 @@
+@import '../../styles/vars';
+@import '../../styles/mixins';
+
+.about {
+
+  &__photo {
+    width: 100%;
+    border-radius: 33% 67% 66% 34% / 37% 38% 62% 63%;
+  }
+
+  &__presentation {
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    text-align: justify;
+    background-color: $white;
+    border-radius: 20px;
+    padding: $spacer;
+    margin: 33px 10px 40px;
+    
+    &__title {
+      font-weight: 700;
+      font-size: 1.8rem;
+      text-align: center;
+      margin-bottom: $spacer;
+    }
+    
+    &__text {
+      margin-bottom: $spacer;
+    }
+
+    &__links {
+      @include flexCenter(center, center, row);
+
+      &__link {
+        font-weight: 700;
+        font-size: 0.9rem;
+        color: $primary;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      &__avatar {
+        margin-left: 21px;
+        margin-right: 21px;
+      }
+    }
+  }
+}
