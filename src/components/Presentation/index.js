@@ -14,7 +14,7 @@ const Presentation = () => (
 
     {/* Text */}
     <div className="about__presentation">
-      <h1 className="about__presentation__title">Hello there!</h1>
+      <div className="about__presentation__title">Hello there!</div>
       <p className="about__presentation__text">
         I’m Candice Fairand, a web developer working in Paris, France, with a passion for illustration and visual design.
       </p>
