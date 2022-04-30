@@ -37,8 +37,8 @@
 
     // Container around content
     &__container {
-      padding-left: 50px;
-      padding-right: 25px;
+      padding-left: 40px;
+      padding-right: $spacer;
       position: relative;
       background-color: inherit;
       width: 100%;
@@ -50,7 +50,7 @@
         width: 24px;
         height: 24px;
         left: 17px;
-        background-color: $white;
+        background-color: $tint1;
         outline: 2px dotted $white;
         border: 6px solid $story-bg;
         top: 15px;
@@ -77,6 +77,15 @@
         font-size: 1.3rem;
         top: -3px;
       }
+
+      &__image {
+        max-width: 200px;
+        max-height: 200px;
+      }
+
+      &__image-pos {
+        text-align: center;
+      }
     }
   }
 }
@@ -88,4 +97,32 @@
     left: 19px
   }
 }
+
+// Timeline inner circles colors
+#tint1::after,
+.tint1 {
+  background-color: $tint1;
+}
+
+#tint2::after,
+.tint2 {
+  background-color: $tint2;
+}
+
+#tint3::after,
+.tint3 {
+  background-color: $tint3;
+}
+
+#tint4::after,
+.tint4 {
+  background-color: $tint4;
+}
+
+// .tint1,
+// .tint2,
+// .tint3,
+// .tint4 {
+//   font-weight: 700;
+// }
 
