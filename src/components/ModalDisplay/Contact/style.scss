@@ -7,6 +7,14 @@
   padding-right: 22px;
   height: 100%;
 
+  &__confirmation {
+    font-size: 1.2rem;
+    color: $secondary;
+    border: $secondary;
+    padding: $spacer 30px;
+    text-align: center;
+  }
+
   &__form-container {
     @include flexCenter(space-between, center, column);
     height: 450px;
