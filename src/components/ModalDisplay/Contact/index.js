@@ -1,4 +1,7 @@
 import { useSelector } from 'react-redux';
+import { useRef } from 'react';
+
+import emailjs from '@emailjs/browser';
 
 import './style.scss';
 
@@ -6,10 +9,24 @@ import Socials from '../../Socials';
 
 const Contact = () => {
   const { element } = useSelector((state) => state.modals);
+  const form = useRef();
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log('Submit');
+  // EmailJS configuration
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'service_uw4ntbv',
+      'template_dbd3cdd',
+      form.current,
+      'ohBoB_tK8fjW5dWhD',
+    )
+      .then((res) => {
+        console.log(res.text);
+      })
+      .catch((error) => {
+        console.log(error.text);
+      });
   };
 
   if (element !== 'contact') return null;
@@ -18,26 +35,29 @@ const Contact = () => {
     <section className="contact">
 
       <div className="contact__form-container">
+
         <h1 className="contact__title">Contact me</h1>
 
         <p className="contact__text">Feel free to reach out if you're looking for a developer, have a question, or just want to connect:</p>
 
         <form
+          ref={form}
           className="contact__form"
-          onSubmit={handleSubmit}
+          onSubmit={sendEmail}
         >
 
           {/* E-mail */}
           <div className="contact__form__labels">
-            <label htmlFor="contact__form__email">
+            <p>
               Your email address <span>*</span>
-            </label>
+            </p>
           </div>
 
           <div>
             <input
               required
-              id="contact__form__email"
+              id="email"
+              name="email"
               className="contact__form__email"
               type="text"
             />
@@ -45,17 +65,18 @@ const Contact = () => {
 
           {/* Message */}
           <div className="contact__form__labels">
-            <label htmlFor="contact__form__message">
+            <p>
               Your message <span>*</span>
-            </label>
+            </p>
           </div>
 
           <div>
-            <input
+            <textarea
               required
-              id="contact__form__message"
+              rows="5"
+              id="message"
+              name="message"
               className="contact__form__message"
-              type="text"
             />
           </div>
 
