@@ -1,5 +1,7 @@
-import { useEffect, useState, useRef } from 'react';
+import { useState, useRef } from 'react';
 import { useSelector } from 'react-redux';
+
+import PuffLoader from 'react-spinners/PuffLoader';
 
 import emailjs from '@emailjs/browser';
 
@@ -8,6 +10,10 @@ import './style.scss';
 import Socials from '../../Socials';
 
 const Contact = () => {
+  // Loader
+  const [loading, setLoading] = useState(false);
+  const [color, setColor] = useState("hsl(178, 96%, 27%)");
+
   const [sent, setSent] = useState(false);
 
   // Get state to show contact modal
@@ -18,6 +24,9 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    // Loader
+    setLoading(!loading);
+
     emailjs.sendForm(
       'service_uw4ntbv',
       'template_dbd3cdd',
@@ -26,7 +35,11 @@ const Contact = () => {
     )
       .then((res) => {
         console.log(res.text);
+
+        // Confirmation message
         setSent(true);
+        // Stop loader
+        setLoading(false);
       })
       .catch((error) => {
         console.log(error.text);
@@ -37,6 +50,15 @@ const Contact = () => {
 
   return (
     <section className="contact">
+
+      {/* Loader */}
+      <div className="contact__loader">
+        <PuffLoader
+          color={color}
+          loading={loading}
+          size={60}
+        />
+      </div>
 
       <div className="contact__form-container">
         { !sent

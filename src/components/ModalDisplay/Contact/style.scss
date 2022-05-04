@@ -7,11 +7,16 @@
   padding-right: 22px;
   height: 100%;
 
+  &__loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30px,-30px);
+  }
+
   &__confirmation {
     font-size: 1.2rem;
     color: $secondary;
-    border: $secondary;
-    padding: $spacer 30px;
     text-align: center;
   }
 
