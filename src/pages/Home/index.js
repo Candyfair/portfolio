@@ -2,6 +2,7 @@ import './style.scss';
 
 import Intro from 'src/components/Intro';
 import Skills from '../../components/Skills';
+import LatestWork from '../../components/LatestWork';
 
 const Home = () => (
   <>
@@ -13,8 +14,8 @@ const Home = () => (
       <Skills />
     </section>
 
-    <section className="portfolio">
-      Latest projects
+    <section className="work">
+      <LatestWork />
     </section>
   </>
 );
