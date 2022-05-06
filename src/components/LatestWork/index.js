@@ -3,7 +3,7 @@ import './style.scss';
 import orent from '../../assets/images/orent-home.jpg';
 
 const LatestWork = () => (
-  <div>
+  <div className="work__wrapper">
     <h1 className="work__title">My latest work</h1>
 
     {/* Projet O'RENT */}
@@ -19,7 +19,7 @@ const LatestWork = () => (
       <img src={orent} alt="Project O'Rent" className="work__project__img" />
     </div>
 
-    <button></button>
+    <button type="button" className="work__more">Check my portfolio</button>
   </div>
 );
 
