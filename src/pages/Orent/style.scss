@@ -1,0 +1,73 @@
+@import '../../styles/vars';
+@import '../../styles/mixins';
+
+.project {
+  @include flexCenter(center, center, column);
+  padding-left: $spacer;
+  padding-right: $spacer;
+  margin-bottom: 60px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: $spacer;
+  }
+
+  
+  &__text {
+    line-height: 1.5;
+    margin-bottom: $spacer;
+  }
+  
+  &__stack {
+    @include flexCenter(flex-start, flex-start, row);
+    width: 100%;
+    margin-bottom: $spacer;
+
+    &__left {
+      width: 50%;
+    }
+    
+    &__subtitle {
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      text-align: left;
+      width: 100%;
+    }
+    
+    &__list {
+      width: 100%;
+      font-family: 'Inconsolata', sans-serif;
+      line-height: 1.3;
+    }
+
+    &__link {
+      font-weight: 700;
+      color: $primary;
+      margin-bottom: $spacer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &__icon {
+      color: $primary;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+
+  &__screenshot-wrapper {
+    margin-left: -$spacer*2;
+    margin-right: -$spacer*2;
+    margin-top: $spacer;
+    margin-bottom: $spacer;
+  }
+
+  &__screenshot {
+    width: 100%;
+  }
+}

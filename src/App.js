@@ -11,6 +11,7 @@ import {
   Home,
   About,
   Portfolio,
+  Orent,
 } from './pages';
 
 // == Composant
@@ -21,6 +22,7 @@ const App = () => (
       <Routes>
         <Route path="/" element={<Home />} exact />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/portfolio/orent" element={<Orent />} />
         <Route path="/about" element={<About />} exact />
       </Routes>
       <ModalDisplay />
