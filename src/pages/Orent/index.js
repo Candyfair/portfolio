@@ -5,6 +5,8 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 import homeSm from '../../assets/images/orent-home-sm.jpg';
 import mapSm from '../../assets/images/orent-map-sm.jpg';
+import mobileSm from '../../assets/images/orent-responsive-sm.png';
+import errorSm from '../../assets/images/orent-404-sm.jpg';
 
 const Orent = () => (
   <section className="project">
@@ -12,7 +14,7 @@ const Orent = () => (
 
     {/* Introduction */}
     <p className="project__text">
-      O'Rent is an online marketplace that connects individuals who want to rent a place for their vacation to homeowners. This React application is a graduation project.
+      O'Rent is an online marketplace that connects individuals who want to rent a place for their vacation to homeowners.
     </p>
     <p className="project__text">
       As a front-end developer, I built this project from scratch within a month with React and MaterialUI, alongside another front-end developer and a back-end developer.
@@ -56,13 +58,56 @@ const Orent = () => (
       <img src={homeSm} alt="Screenshot of the homepage" className="project__screenshot" />
     </div>
 
+    {/* PROJECT DESCRIPTION */}
+    <h2 className="project__subtitle">Project Purpose and Goal</h2>
+
     <p className="project__text">
-      Project Purpose and Goal - Web Stack and Explanation - Problems and Thought Process - Lessons Learned
+      This React application is a graduation project. I was part of a team of 3 developers and we developed the project within 3 sprints of one week each. I was in charge of writing the invitation to tender and detailing the functional specifications. 
+    </p>
+    <p className="project__text">
+      Our goal was to make an online market place where homeowners could publish an ad with photos and dates of availability to advertise their property, and rent it to private individuals while they would be on vacation.
     </p>
 
     <div className="project__screenshot-wrapper">
       <img src={mapSm} alt="Screenshot of the map with all the properties" className="project__screenshot" />
     </div>
+
+    {/* SPECIFICATIONS */}
+    <h2 className="project__subtitle">Web Stack and Specifications</h2>
+    <p className="project__text">
+      In order to create an ad for their property as homeowner, or to rent one as a user, visitors have to create an account. React hooks, session storage and Redux were used to interact with the data and display it when needed, according to the logged status of the users. 
+    </p>
+    <p className="project__text">
+      A Geocoding API was used in order to show the different properties on a map. Also, the website is fully responsive and includes a dark mode that can be activated on demand for reading comfort. 
+    </p>
+
+    <div className="project__screenshot-wrapper">
+      <img src={mobileSm} alt="Screenshot of the responsive version of the website" className="project__screenshot" />
+    </div>
+
+    {/* PROBLEMS */}
+    <h2 className="project__subtitle">Problems and Thought Process</h2>
+    <p className="project__text">
+      The timeframe to release the app being short, we made the decision to use MaterialUI, a popular React UI framework, thinking it would allow us to save time on the front-end design development.
+    </p>
+    <p className="project__text">
+      However, getting familiar with a tool that none of the front-end developer used before took more time than expected and became a liability more than a benefit. 
+    </p>
+
+    <div className="project__screenshot-wrapper">
+      <img src={errorSm} alt="Screenshot of the page 404" className="project__screenshot" />
+    </div>
+
+    {/* LESSONS LEARNED */}
+    <h2 className="project__subtitle">Lessons Learned</h2>
+    <p className="project__text">
+      Using a UI framework can be an interesting option, but only if the framework is already mastered and the project doesn't require a lot of customisation, as 
+    </p>
+    <p className="project__text">
+      Also, working in a team - even a small one - requires a good level of communication, regular updates during SCRUM meetings and a proper management of git branches to avoid duplicates or code losses. 
+    </p>
+
+
 
   </section>
 );

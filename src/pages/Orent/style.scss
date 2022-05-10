@@ -13,10 +13,16 @@
     margin-bottom: $spacer;
   }
 
+  &__subtitle {
+    font-weight: 700;
+    font-size: 1.3;
+    margin-bottom: $spacer;
+  }
   
   &__text {
     line-height: 1.5;
     margin-bottom: $spacer;
+    text-align: justify
   }
   
   &__stack {
