@@ -1,5 +1,7 @@
 import './style.scss';
 
+import { Link } from 'react-router-dom';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
@@ -10,15 +12,17 @@ import errorSm from '../../assets/images/orent-404-sm.jpg';
 
 const Orent = () => (
   <section className="project">
-    <h1 className="project__title">O'Rent</h1>
+    <div className="project__intro-wrapper">
+      <h1 className="project__title">O'Rent</h1>
 
     {/* Introduction */}
-    <p className="project__text">
-      O'Rent is an online marketplace that connects individuals who want to rent a place for their vacation to homeowners.
-    </p>
-    <p className="project__text">
-      As a front-end developer, I built this project from scratch within a month with React and MaterialUI, alongside another front-end developer and a back-end developer.
-    </p>
+      <p className="project__text">
+        O'Rent is an online marketplace that connects individuals who want to rent a place for their vacation to homeowners.
+      </p>
+      <p className="project__text">
+        As a front-end developer, I built this project from scratch within a month with React and MaterialUI, alongside another front-end developer and a back-end developer.
+      </p>
+    </div>
 
     <div className="project__stack">
       {/* Stack */}
@@ -107,7 +111,10 @@ const Orent = () => (
       Also, working in a team - even a small one - requires a good level of communication, regular updates during SCRUM meetings and a proper management of git branches to avoid duplicates or code losses. 
     </p>
 
-
+    {/* LINK TO OTHER PROJECTS */}
+    <Link to="/portfolio">
+      <button type="button" className="work__more">Check my other projects</button>
+    </Link>
 
   </section>
 );

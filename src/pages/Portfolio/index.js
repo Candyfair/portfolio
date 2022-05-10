@@ -1,5 +1,7 @@
 import './style.scss';
 
+import { Link } from 'react-router-dom';
+
 import orent from '../../assets/images/orent-project.jpg';
 import faq from '../../assets/images/faq-project.jpg';
 import order from '../../assets/images/order-project.jpg';
@@ -16,12 +18,16 @@ const Portfolio = () => {
 
       {/* Project O'RENT */}
       <article className="projects__details">
-        <img src={orent} alt="Screenshots for project O'Rent" className="projects__details__img" />
+        <Link to="/portfolio/orent">
+          <img src={orent} alt="Screenshots for project O'Rent" className="projects__details__img" />
+        </Link>
 
         <div className="projects__details__text">
           <h2 className="projects__details__text__title">O'Rent</h2>
           <p className="projects__details__text__desc">A vacation rental marketplace built with React</p>
-          <a href="https://github.com/Candyfair/ORent" className="projects__details__text__link">View project {'>'}</a>
+          <Link to="/portfolio/orent" className="projects__details__text__link">
+            View project {'>'}
+          </Link>
         </div>
       </article>
 

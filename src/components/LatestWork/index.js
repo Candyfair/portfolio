@@ -18,7 +18,9 @@ const LatestWork = () => (
         </p>
       </div>
 
-      <img src={orent} alt="Project O'Rent" className="work__project__img" />
+      <Link to="/portfolio/orent">
+        <img src={orent} alt="Project O'Rent" className="work__project__img" />
+      </Link>
 
     </div>
 

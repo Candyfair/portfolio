@@ -7,9 +7,22 @@
   padding-right: $spacer;
   margin-bottom: 60px;
 
+  &__intro-wrapper {
+    background-color: $text;
+    color: $white;
+    padding: $spacer;
+    border: 1px $text solid;
+    margin-left: -$spacer*2;
+    margin-right: -$spacer*2;
+    margin-bottom: 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+
   &__title {
     font-weight: 700;
     font-size: 1.8rem;
+    text-align: center;
     margin-bottom: $spacer;
   }
 
@@ -17,6 +30,7 @@
     font-weight: 700;
     font-size: 1.3;
     margin-bottom: $spacer;
+    margin-top: $spacer;
   }
   
   &__text {
@@ -24,11 +38,14 @@
     margin-bottom: $spacer;
     text-align: justify
   }
-  
+
   &__stack {
     @include flexCenter(flex-start, flex-start, row);
     width: 100%;
     margin-bottom: $spacer;
+    background-color: $story-bg;
+    padding: $spacer;
+    border-radius: 20px;
 
     &__left {
       width: 50%;
@@ -37,7 +54,7 @@
     &__subtitle {
       font-weight: 700;
       font-size: 1rem;
-      margin-bottom: 8px;
+      margin-bottom: $spacer;
       text-transform: uppercase;
       text-align: left;
       width: 100%;
