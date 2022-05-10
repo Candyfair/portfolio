@@ -55,6 +55,11 @@
           text-decoration: underline;
         }
       }
+
+      &__icon {
+        float: right;
+        color: $primary;
+      }
     }
 
     &__more {
