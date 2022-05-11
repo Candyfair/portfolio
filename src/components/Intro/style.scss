@@ -4,10 +4,15 @@
   @include flexCenter(center, center, column);
   font-family: 'Inconsolata', monospace;
   
+  &__header {
+    @include flexCenter(center, center, column);
+  }
+
   &__title {
     font-weight: 800;
     font-size: 2.5rem;
     margin-bottom: 1.4rem;
+    text-align: center;
   }
 
   &__paragraph {
@@ -15,6 +20,7 @@
     font-size: 1.7rem;
     text-align: center;
     margin-bottom: 1.8rem;
+    max-width: 350px;
   }
   
   
@@ -23,6 +29,21 @@
     
     &__container {
       max-width: 265px;
+    }
+  }
+}
+
+// Desktop display
+@media only screen and (min-width: 600px) {
+  .intro {
+
+    &__header {
+      @include flexCenter(space-between, center, row);
+      width: 700px;
+    }
+
+    &__image__container {
+      max-width: 320px;
     }
   }
 }

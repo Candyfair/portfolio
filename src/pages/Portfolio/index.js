@@ -16,6 +16,7 @@ const Portfolio = () => {
 
   return (
     <section className="projects">
+
       <h1 className="projects__title">What I've been working on</h1>
       <p className="projects__subtitle">Selected projects</p>
 

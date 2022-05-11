@@ -33,49 +33,51 @@ const Skills = () => {
 
   return (
     <section className="skills">
-      <Swiper
-        {...params}
-        spaceBetween={40}
-        navigation={{
-          nextEl: '.swiper-button-next-unique',
-          prevEl: '.swiper-button-prev-unique',
-        }}
-        pagination={{
-          el: '.my-custom-pagination-div',
-          clickable: true,
-          renderBullet: (index, className) => `<span class="${className}"></span>`,
-        }}
-        mousewheel={{
-          forceToAxis: true,
-        }}
-        keyboard
-        modules={[Navigation, Pagination, Mousewheel, Keyboard]}
-        className="mySwiper"
-      >
-        <SwiperSlide className="swiper-slide"><TechSkills /></SwiperSlide>
-        <SwiperSlide className="swiper-slide"><ProSkills /></SwiperSlide>
-        <SwiperSlide className="swiper-slide"><SoftSkills /></SwiperSlide>
+      <div className="mobile">
+        <Swiper
+          {...params}
+          spaceBetween={40}
+          navigation={{
+            nextEl: '.swiper-button-next-unique',
+            prevEl: '.swiper-button-prev-unique',
+          }}
+          pagination={{
+            el: '.my-custom-pagination-div',
+            clickable: true,
+            renderBullet: (index, className) => `<span class="${className}"></span>`,
+          }}
+          mousewheel={{
+            forceToAxis: true,
+          }}
+          keyboard
+          modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+          className="mySwiper"
+        >
+          <SwiperSlide className="swiper-slide"><TechSkills /></SwiperSlide>
+          <SwiperSlide className="swiper-slide"><ProSkills /></SwiperSlide>
+          <SwiperSlide className="swiper-slide"><SoftSkills /></SwiperSlide>
 
-        {/* Swiper navigation arrows */}
-        <span className="swiper-button-prev-unique">
-          <FontAwesomeIcon
-            icon={faAngleLeft}
-            size="xl"
-            fixedWidth
-          />
-        </span>
-        <span className="swiper-button-next-unique">
-          <FontAwesomeIcon
-            icon={faAngleRight}
-            size="xl"
-            fixedWidth
-          />
-        </span>
+          {/* Swiper navigation arrows */}
+          <span className="swiper-button-prev-unique">
+            <FontAwesomeIcon
+              icon={faAngleLeft}
+              size="xl"
+              fixedWidth
+            />
+          </span>
+          <span className="swiper-button-next-unique">
+            <FontAwesomeIcon
+              icon={faAngleRight}
+              size="xl"
+              fixedWidth
+            />
+          </span>
 
-        {/* Swiper pagination */}
-        <div className="my-custom-pagination-div" />
+          {/* Swiper pagination */}
+          <div className="my-custom-pagination-div" />
 
-      </Swiper>
+        </Swiper>
+      </div>
     </section>
   );
 };

@@ -1,6 +1,73 @@
 @import '../../styles/vars';
+@import '../../styles/mixins';
 
 .menu-icon {
-    cursor: pointer;
+  cursor: pointer;
 }
+
+// Desktop
+@media only screen and (min-width: 600px) {
+  .menu-desktop {
+    @include flexCenter(center, center, row);
+
+    & ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      padding-top: 3px;
+      font-family: 'Varela Round', sans-serif;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 1.1rem;
+      display: block;
+    }
+    
+    & li {
+      margin-right: $spacer;
+      float:left; 
+      display: block;
+      color: $text;
+      border-radius: 20px;
+      text-align: center;
+      
+      & a:hover {
+        color: $primary;
+      }
+    }
+
+    &__socials {
+      @include flexCenter(center, center, row);
+      margin-right: $spacer;
+
+      &__icon {
+        margin-right: 8px;
+        color: $white;
+        cursor: pointer;
+        padding: 8px;
+        border-radius: 25px;
+
+        &:hover {
+          color: $primary;
+          background-color: $white;
+        }
+      }
+    }
+
+    &__contact {
+      cursor: pointer;
+      margin-right: $spacer;
+      color: $text;
+      padding: 8px;
+      border-radius: 25px;
+
+      &:hover {
+        background-color: $white;
+        color: $primary;
+      }
+    }
+
+  }
+  
+}
+
 

@@ -1,5 +1,3 @@
-import './style.scss';
-
 import Intro from 'src/components/Intro';
 import Skills from '../../components/Skills';
 import LatestWork from '../../components/LatestWork';
@@ -15,7 +13,11 @@ const Home = () => (
     </section>
 
     <section className="work">
-      <LatestWork />
+      {/* Mobile */}
+      <div className="mobile">
+        <LatestWork />
+      </div>
+
     </section>
   </>
 );

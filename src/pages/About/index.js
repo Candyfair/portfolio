@@ -1,5 +1,3 @@
-import './style.scss';
-
 import Presentation from '../../components/Presentation';
 import Story from '../../components/Story';
 
