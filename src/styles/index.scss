@@ -56,14 +56,14 @@ body {
 }
 
 // General rule for mobile & tablet display
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: vars.$mobile) {
   .desktop {
     display: none;
   }
 }
 
 // General rule for desktop display
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: vars.$desktop) {
   .mobile {
     display: none;
   }

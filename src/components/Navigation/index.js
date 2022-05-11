@@ -39,20 +39,30 @@ const Navigation = () => {
 
           {/* Socials */}
           <div className="menu-desktop__socials">
-            <span className="menu-desktop__socials__icon">
+            <a
+              href="https://www.linkedin.com/in/candicebfairand/"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="menu-desktop__socials__icon"
+            >
               <FontAwesomeIcon
                 icon={faLinkedinIn}
                 size="lg"
                 fixedWidth
               />
-            </span>
-            <span className="menu-desktop__socials__icon">
+            </a>
+            <a
+              href="https://github.com/Candyfair"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="menu-desktop__socials__icon"
+            >
               <FontAwesomeIcon
                 icon={faGithub}
                 size="lg"
                 fixedWidth
               />
-            </span>
+            </a>
           </div>
 
           {/* Menu */}
