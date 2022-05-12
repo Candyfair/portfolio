@@ -6,9 +6,6 @@ import { faEllipsisVertical } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 
-// Social icons
-import { SocialIcon } from 'react-social-icons';
-
 import { Link } from 'react-router-dom';
 
 import { useDispatch } from 'react-redux';

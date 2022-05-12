@@ -44,7 +44,9 @@ const Portfolio = () => {
 
         {/* Project FAQ component */}
         <article className="projects__details">
-          <img src={faq} alt="Screenshots for FAQ component" className="projects__details__img" />
+          <a href="https://faq-accordion-card-brown-rho.vercel.app/" className="projects__details__text__link" target="_blank" rel="noreferrer noopener">
+            <img src={faq} alt="Screenshots for FAQ component" className="projects__details__img" />
+          </a>
 
           <div className="projects__details__text">
             <div>
@@ -71,7 +73,9 @@ const Portfolio = () => {
 
         {/* Project FAQ component */}
         <article className="projects__details">
-          <img src={order} alt="Screenshots for order component" className="projects__details__img" />
+          <a href="https://order-summary-component-green.vercel.app/" className="projects__details__text__link" target="_blank" rel="noreferrer noopener">
+            <img src={order} alt="Screenshots for order component" className="projects__details__img" />
+          </a>
 
           <div className="projects__details__text">
             <div>

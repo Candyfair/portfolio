@@ -99,7 +99,7 @@
     @include flexCenter(space-between, flex-start, column);
     max-width: $desktop-content;
     margin: 0 auto;
-    margin-top: 60px;
+    // margin-top: 60px;
 
     // Title & Subtitle
     &__title-group {
