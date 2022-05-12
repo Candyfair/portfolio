@@ -49,3 +49,24 @@
     }
   }
 }
+
+// Desktop 
+@media only screen and (min-width: $desktop) {
+  .about-wrapper {
+    @include flexCenter(space-evenly, center, row);
+    margin-right: 60px;
+  }
+
+  .about {
+
+    &__photo {
+      width: 420px;
+    }
+
+    &__presentation {
+      margin-left: 60px;
+      padding: $spacer*2;
+    }
+  }
+
+}

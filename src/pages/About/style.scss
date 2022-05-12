@@ -1,0 +1,11 @@
+@import '../../styles/vars';
+@import '../../styles/mixins';
+
+// Desktop 
+@media only screen and (min-width: $desktop) {
+  .about {
+    @include flexCenter(space-between, flex-start, column);
+    max-width: $desktop-content;
+    margin: 0 auto;
+  }
+}

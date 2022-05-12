@@ -3,7 +3,7 @@ import photo from '../../assets/images/photo.jpg';
 import avatar from '../../assets/images/iconcandy.png';
 
 const Presentation = () => (
-  <article>
+  <article className="about-wrapper">
 
     {/* Photo */}
     <img
@@ -47,7 +47,6 @@ const Presentation = () => (
       </div>
 
     </div>
-
 
   </article>
 );

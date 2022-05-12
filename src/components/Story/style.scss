@@ -120,10 +120,10 @@
   background-color: $tint4;
 }
 
-// .tint1,
-// .tint2,
-// .tint3,
-// .tint4 {
-//   font-weight: 700;
-// }
+// Desktop 
+@media only screen and (min-width: $desktop) {
+  .story {
+    flex: 1;
+  }
+}
 
