@@ -4,6 +4,11 @@
 .projects {
   @include flexCenter(center, center, column);
 
+  // Title & Subtitle
+  &__title-group {
+    text-align: center;
+  }
+
   &__title {
     font-weight: 700;
     font-size: 1.7rem;
@@ -17,6 +22,11 @@
     font-weight: 300;
     font-size: 1.4rem;
     margin-bottom: 62px;
+  }
+
+  // Portfolio content
+  &__details-content {
+    @include flexCenter(center, center, column);
   }
 
   &__details {
@@ -62,6 +72,7 @@
       }
     }
 
+    // Button
     &__more {
       background-color: $primary;
       border: none;
@@ -73,6 +84,76 @@
       margin: 33px 0;
       max-width: 185px;
       margin-bottom: 60px;
+
+      &:hover {
+        background: $primary-dark;
+        color: $white;
+      }
     }
+  }
+}
+
+// Desktop 
+@media only screen and (min-width: $desktop) {
+  .projects {
+    @include flexCenter(space-between, flex-start, column);
+    max-width: $desktop-content;
+    margin: 0 auto;
+    margin-top: 60px;
+
+    // Title & Subtitle
+    &__title-group {
+      padding-left: $spacer;
+    }
+
+    &__title {
+      max-width: max-content;
+      text-align: left;
+      margin-bottom: 5px;
+
+      &::after {
+        content: ' :';
+      }
+    }
+
+    &__subtitle {
+      font-family: 'Inconsolata', sans-serif;
+      font-weight: 300;
+      font-size: 1.5rem;
+      text-align: left;
+      margin-bottom: 30px;
+    }
+
+    // Portfolio content
+    &__details-content {
+      @include flexCenter(space-between, flex-start, row);
+      width: 100%;
+    }
+
+    &__details {
+      max-width: 300px;
+      
+      &__text {
+        @include flexCenter(space-between, flex-start, column);
+        height: 160px;
+
+      }
+
+      &__links-group {
+        width: 100%;
+      }
+
+      // Button
+      &__more {
+        padding: 20px 15px;
+        margin-top: 60px;
+        max-width: 150px;
+        line-height: 1.4;
+        margin-right: $spacer*2;
+ 
+      }
+    }
+
+
   }
 }

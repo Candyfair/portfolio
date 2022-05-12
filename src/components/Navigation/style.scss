@@ -55,9 +55,9 @@
 
     &__contact {
       cursor: pointer;
-      margin-right: $spacer;
       color: $text;
       padding: 8px;
+      margin-right: -8px;
       border-radius: 25px;
 
       &:hover {

@@ -8,6 +8,7 @@ $background-transparent: hsl(240, 62%, 88%, 0.1);
 $story-bg: hsl(249, 55%, 80%);
 $text: hsl(201, 52%, 16%);
 $primary: hsl(12, 87%, 60%);
+$primary-dark: hsl(12, 87%, 50%);
 $secondary: hsl(178, 96%, 27%);
 $modal-background: hsl(0, 0%, 0%, 0.3);
 $shadow: hsl(0, 0%, 0%, 0.4);
@@ -19,5 +20,6 @@ $tint3: hsl(44, 92%, 76%);
 $tint4: hsl(17, 97%, 86%);
 
 // Screen size
-$mobile: 768px; // max-width for mobile
-$desktop: 769px; // min-width for desktop
+$mobile: 768px; // media query for mobile (max-width)
+$desktop: 769px; // media query for desktop (min-width)
+$desktop-content: 1150px; // content for desktop

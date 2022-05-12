@@ -78,6 +78,25 @@ const Skills = () => {
 
         </Swiper>
       </div>
+
+      <div className="desktop">
+
+        <div className="skills">
+          <article className="skills__block">
+            <TechSkills />
+          </article>
+
+          <article className="skills__block">
+            <ProSkills />
+          </article>
+
+          <article className="skills__block">
+            <SoftSkills />
+          </article>
+        </div>
+
+      </div>
+
     </section>
   );
 };
