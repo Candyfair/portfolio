@@ -1,29 +1,28 @@
-h1 {
-  text-align: center;
-  margin-top: 8%;
-  letter-spacing: 5px;
-  font-weight: 700;
-  font-size: 35px;
-  text-transform: uppercase;
-}
+@import '../../styles/vars';
+@import '../../styles/mixins';
 
+// ----- TIMELINE STYLES
 .wrapper {
   position: relative;
   text-align: center;
   margin: 0 auto;
   display: block;
-  width: 100%;
-  height: 240px;
+  width: 90%;
+  height: 500px;
 }
 
 .line-area {
   display: block;
-  width: 70%;
+  width: 85%;
   height: 5px;
-  background: #262626;
+  // background: $white;
+  border-bottom: 2px dotted $white;
   position: absolute;
-  top: 49%;
-  left: 15%;
+  top: 50px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .wrapper .timeline-area {
@@ -31,7 +30,7 @@ h1 {
 }
 
 .single-item {
-  width: 6%;
+  width: 4%;
   display: inline-block;
   position: relative;
   height: 100%;
@@ -40,60 +39,62 @@ h1 {
   z-index: 1;
 }
 
-// Positionnement des années sous la timeline
+// Positioning of years on the timeline
 .single-item > span {
   height: 32px;
   display: block;
   font-weight: 700;
   position: absolute;
-  top: 50%;
+  top:38px;
   margin-top: -8px;
   width: 100%;
   cursor: pointer;
 }
 
-// Cercle sur la timeline
-.single-item > span::before {
+// Dot on the timeline
+.single-item > span::after {
   content: '';
   display: block;
   width: 16px;
   height: 16px;
-  background-color: #000;
-  margin: 0 auto 8px;
+  background-color: $tint1;
+  outline: 2px dotted $white;
+  border: 4px solid $story-bg;
+  margin: 0 auto;
   border-radius: 50%;
 }
 
-// Cache le nom de l'entreprise avec l'image
+// Hide the text
 .image-area {
   display: none;
   position: absolute;
-  left: 0;
-  top: 50%;
+  left: -110px;
+  top: 100px;
   margin-top: -50%;
-  width: 100%;
+  width: 300px;
+  background-color: $white;
+  padding: $spacer;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  border-radius: 20px;
 }
 
-.image-area a {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.image-area a p { // img au lieu de p
-  border-radius: 50%;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  max-height: 100%;
-  max-width: 100%;
-  border: 5px solid #fff;
-}
+// .image-area a p { // img au lieu de p
+//   border-radius: 50%;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+//   width: 300px;
+//   // max-height: 100%;
+//   // max-width: 100%;
+//   border: 5px solid #fff;
+// }
 
 // Texte qui va avec l'image
 .image-area a span {
   position: absolute;
-  width: 250%;
+  // width: 250%;
   margin-left: -72%;
   bottom: -40px;
   left: 0;
@@ -105,14 +106,44 @@ h1 {
   font-weight: 700;
 }
 
-.image-area a span::after {
-  margin-left: 5px;
-}
+// .image-area a span::after {
+//   margin-left: 5px;
+// }
 
-.single-item.active {
-  width: 10%;
-}
+// .single-item.active {
+//   width: 10%;
+// }
 
 .single-item.active .image-area {
   display: block;
+}
+
+// ----- DESKTOP
+@media only screen and (min-width: $desktop) {
+  .story {
+    margin: 0 auto;
+    min-width: $desktop-content;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 60px;
+  }
+
+}
+
+// Colors
+// Timeline inner circles colors
+.tint1 {
+  background-color: $tint1;
+}
+
+.tint2 {
+  background-color: $tint2;
+}
+
+.tint3 {
+  background-color: $tint3;
+}
+
+.tint4 {
+  background-color: $tint4;
 }

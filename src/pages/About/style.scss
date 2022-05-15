@@ -4,8 +4,9 @@
 // Desktop 
 @media only screen and (min-width: $desktop) {
   .about {
-    @include flexCenter(space-between, flex-start, column);
+    @include flexCenter(center, center, column);
     max-width: $desktop-content;
     margin: 0 auto;
+    flex-wrap: wrap;
   }
 }
