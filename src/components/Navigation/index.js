@@ -65,7 +65,7 @@ const Navigation = () => {
           {/* Menu */}
           <ul>
             <li><Link to="/">Skills</Link></li>
-            <li><Link to="/portfolio">Portfolio</Link></li>
+            {/* <li><Link to="/portfolio">Portfolio</Link></li> */}
             <li><Link to="/about">About</Link></li>
           </ul>
 

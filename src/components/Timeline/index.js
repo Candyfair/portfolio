@@ -48,7 +48,7 @@ const Timeline = () => {
           <div className="single-item">
             <span>1995</span>
             <div className="image-area">
-              <p>At home, we now have a computer that reads 5¼" floppy disks, and a dot-matrix printer. My mom teaches me how to use <em className="tint4">MS Office</em> suite and I start writing my first novel. After 150 pages and a hard drive crash, I lose everything I wrote. That's how I learn the importance of doing backups and saving my work regularly.</p>
+              <p>At home, we now have a computer that reads 5¼" floppy disks, and a dot-matrix printer. My mom teaches me how to use <em className="tint4">MS Office</em> suite and I start writing my first novel.</p> <p>After 150 pages and a hard drive crash, I lose everything I wrote. That's how I learn the importance of doing backups and saving my work regularly.</p>
             </div>
           </div>
 

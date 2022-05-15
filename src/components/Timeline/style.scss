@@ -29,8 +29,9 @@
   height: 100%;
 }
 
+// Block with year + dot + text (hidden)
 .single-item {
-  width: 4%;
+  width: 5%; // spacing of years on timeline
   display: inline-block;
   position: relative;
   height: 100%;
@@ -43,10 +44,12 @@
 .single-item > span {
   height: 32px;
   display: block;
-  font-weight: 700;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.3rem;
   position: absolute;
-  top:38px;
-  margin-top: -8px;
+  top:33px;
+  left: 35px;
+  margin-top: -$spacer;
   width: 100%;
   cursor: pointer;
 }
@@ -60,18 +63,18 @@
   background-color: $tint1;
   outline: 2px dotted $white;
   border: 4px solid $story-bg;
-  margin: 0 auto;
+  margin: 8px auto;
   border-radius: 50%;
 }
 
-// Hide the text
+// Text (hidden)
 .image-area {
   display: none;
   position: absolute;
-  left: -110px;
-  top: 100px;
-  margin-top: -50%;
-  width: 300px;
+  left: -70px;
+  top: 120px;
+  // margin-top: -50%;
+  width: 270px;
   background-color: $white;
   padding: $spacer;
   line-height: 1.5;
@@ -79,43 +82,23 @@
   border-radius: 20px;
 }
 
-// .image-area a p { // img au lieu de p
-//   border-radius: 50%;
-//   top: 0;
-//   left: 0;
-//   bottom: 0;
-//   right: 0;
-//   width: 300px;
-//   // max-height: 100%;
-//   // max-width: 100%;
-//   border: 5px solid #fff;
-// }
-
-// Texte qui va avec l'image
-.image-area a span {
-  position: absolute;
-  // width: 250%;
-  margin-left: -72%;
-  bottom: -40px;
-  left: 0;
-  font-size: 20px;
-  text-transform: uppercase;
-  text-decoration: none;
-  white-space: nowrap;
-  color: #000;
-  font-weight: 700;
+.image-area p { 
+  margin-bottom: $spacer;
 }
 
-// .image-area a span::after {
-//   margin-left: 5px;
-// }
-
-// .single-item.active {
-//   width: 10%;
-// }
-
+// --- Behaviour when active
 .single-item.active .image-area {
   display: block;
+  margin-top: -50%;
+}
+
+// Years
+.single-item.active span {
+  color: $white;
+}
+// Dots
+.single-item.single-item.active > span::after {
+  background-color: $white;
 }
 
 // ----- DESKTOP
