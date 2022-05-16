@@ -10,6 +10,11 @@ import './style.scss';
 import Socials from '../../Socials';
 
 const Contact = () => {
+  // EmailJS variables
+  const MAIL_SERVICE = process.env.REACT_APP_MAIL_SERVICE;
+  const MAIL_TEMPLATE = process.env.REACT_APP_MAIL_TEMPLATE;
+  const MAIL_PUBLIC_KEY = process.env.REACT_APP_MAIL_PUBLIC_KEY;
+
   // Loader
   const [loading, setLoading] = useState(false);
   const [color, setColor] = useState("hsl(178, 96%, 27%)");
@@ -28,10 +33,10 @@ const Contact = () => {
     setLoading(!loading);
 
     emailjs.sendForm(
-      'service_uw4ntbv',
-      'template_dbd3cdd',
+      MAIL_SERVICE,
+      MAIL_TEMPLATE,
       form.current,
-      'ohBoB_tK8fjW5dWhD',
+      MAIL_PUBLIC_KEY,
     )
       .then((res) => {
         console.log(res.text);
