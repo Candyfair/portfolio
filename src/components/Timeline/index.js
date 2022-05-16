@@ -34,7 +34,8 @@ const Timeline = () => {
           <div className="single-item active">
             <span>1986</span>
             <div className="image-area">
-              <p>My parents bring home an <em className="tint1">Amstrad CPC 464</em>. It has a tape drive and a green monochrome monitor. Games are all pixelized and can take up to 15 minutes to load. I'm 7 and I'm hooked.</p>
+              <p>My parents bring home an <em className="tint1">Amstrad CPC 464</em>. It has a tape drive and a green monochrome monitor.</p>
+              <p>Games are all pixelized and can take up to 15 minutes to load. I'm 7 and I'm hooked.</p>
             </div>
             <img src={img1} alt="Amstrad CPC 464" className="image-right" />
           </div>
@@ -61,7 +62,8 @@ const Timeline = () => {
           <div className="single-item">
             <span>1998</span>
             <div className="image-area">
-              <p>As a student, I have a part-time job as a night receptionist. With few visitors and a laptop left for the reception, I use this machine to make my first <em className="tint1">HTML</em> website on GeoCities with lots of frames, blinking titles and very aggressive animated gifs.</p>
+              <p>As a student, I have a part-time job as a night receptionist.</p>
+              <p>With few visitors and a laptop left for the reception, I use this machine to make my first <em className="tint1">HTML</em> website on GeoCities with lots of frames, blinking titles and very aggressive animated gifs.</p>
             </div>
             <img src={img3} alt="Laptop from the 1990s" className="image-right" />
           </div>
@@ -78,7 +80,7 @@ const Timeline = () => {
           <div className="single-item">
             <span>2008</span>
             <div className="image-area">
-              <p>I move to the South of France and start an online business. I begin with the open source platform Joomla and the extension Virtuemart for <em className="tint4">e-commerce</em>.</p> <p>Two years later my business expands and I migrate to Prestashop. For both of these I learn to use PHP to make my site stand out.</p>
+              <p>I move to the South of France and start an online business. I begin with the open source platform Joomla and an extension for <em className="tint4">e-commerce</em>.</p> <p>Two years later my business expands and I migrate to Prestashop. For both of these I learn to use PHP to make my site stand out.</p>
             </div>
           </div>
 

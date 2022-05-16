@@ -1,6 +1,17 @@
 @import '../../styles/vars';
 @import '../../styles/mixins';
 
+// ----- DESKTOP
+@media only screen and (min-width: $desktop) {
+  .story {
+    margin: 0 auto;
+    min-width: $desktop-content;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 60px;
+  }
+}
+
 // ----- TIMELINE STYLES
 .wrapper {
   position: relative;
@@ -52,7 +63,7 @@
   width: 100%;
   cursor: pointer;
   color: $text;
-  transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out; // Change of colouur
 }
 
 // Dot on the timeline
@@ -103,6 +114,24 @@
   margin-bottom: $spacer;
 }
 
+// ----- Images
+.image-right, .image-left {
+  display: none;
+  position: absolute;
+  width: 300px;
+  top: 100px;
+  transition: display 0.5s;
+  overflow: hidden;
+}
+
+.image-right {
+  left: 230px;
+}
+
+.image-left {
+  right: 180px;
+}
+
 // --- Behaviour when active
 .single-item.active {
   width: 7%; // Animation of the years
@@ -110,6 +139,8 @@
 
 .single-item.active .image-area {
   display: block;
+  animation: slide-in 750ms;
+  animation-fill-mode: backwards;
 }
 
 // Years
@@ -123,43 +154,52 @@
 }
 
 // Images
-.single-item.active .image-right {
+.single-item.active .image-right, .single-item.active .image-left {
   display: block;
+}
+
+.single-item.active .image-right {
+  animation: slide-left 750ms;
+  animation-fill-mode: backwards;
 }
 
 .single-item.active .image-left {
-  display: block;
+  animation: slide-right 750ms;
+  animation-fill-mode: backwards;
 }
 
-// ----- DESKTOP
-@media only screen and (min-width: $desktop) {
-  .story {
-    margin: 0 auto;
-    min-width: $desktop-content;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    margin-bottom: 60px;
+// Animation settings
+@keyframes slide-in {
+  from {
+    transform: translateY(50%);
+    opacity: 0.25;
   }
-
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 
-// ----- Images
-.image-right {
-  display: none;
-  position: absolute;
-  width: 300px;
-  left: 230px;
-  top: 100px;
-  transition: display 0.5s;
+@keyframes slide-left {
+  from {
+    transform: translateX(70%);
+    opacity: 0.25;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
 
-.image-left {
-  display: none;
-  position: absolute;
-  width: 300px;
-  right: 180px;
-  top: 100px;
-  transition: display 0.5s;
+@keyframes slide-right {
+  from {
+    transform: translateX(-70%);
+    opacity: 0.25;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
 }
 
 
