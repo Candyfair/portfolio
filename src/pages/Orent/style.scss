@@ -15,8 +15,7 @@
     margin-left: -$spacer*2;
     margin-right: -$spacer*2;
     margin-bottom: 30px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: 20px;
   }
 
   &__title {
@@ -28,9 +27,10 @@
 
   &__subtitle {
     font-weight: 700;
-    font-size: 1.3;
+    font-size: 1.4rem;
     margin-bottom: $spacer;
     margin-top: $spacer;
+    text-align: center;
   }
   
   &__text {
@@ -39,6 +39,11 @@
     text-align: justify
   }
 
+  &__stack-wrapper {
+    padding: $spacer;
+    padding-bottom: 0;
+  }
+  
   &__stack {
     @include flexCenter(flex-start, flex-start, row);
     width: 100%;
@@ -93,4 +98,29 @@
   &__screenshot {
     width: 100%;
   }
+}
+
+// Desktop 
+@media only screen and (min-width: $desktop) {
+  .project {
+    max-width: $desktop-content;
+    margin: 0 auto;
+
+    &__intro-wrapper {
+      @include flexCenter(space-around, center, row);
+    }
+
+    &__screenshot-wrapper {
+      max-width: $desktop-content;
+    }
+
+    &__text-wrapper {
+      width: 50%;
+    }
+
+    &__stack-wrapper {
+      width: 400px;
+    }
+  }
+
 }
