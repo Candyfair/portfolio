@@ -8,5 +8,15 @@
 
   &__arrow {
     color: $text;
+    cursor: pointer;
+  }
+}
+
+// Desktop 
+@media only screen and (min-width: $desktop) {
+  .modal-header {
+    max-width: 400px;
+    background-color: $white;
+    justify-content: flex-end;
   }
 }

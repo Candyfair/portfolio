@@ -75,6 +75,7 @@ const Navigation = () => {
               icon={faEnvelope}
               size="xl"
               fixedWidth
+              onClick={() => dispatch(setModal(true, 'contact'))}
             />
           </span>
         </nav>

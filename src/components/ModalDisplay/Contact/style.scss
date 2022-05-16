@@ -77,3 +77,12 @@
     }
   }
 }
+
+// Desktop 
+@media only screen and (min-width: $desktop) {
+  .contact {
+    background-color: $white;
+    width: 400px;
+    max-height: 620px;
+  }
+}

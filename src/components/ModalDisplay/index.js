@@ -17,12 +17,22 @@ const ModalDisplay = () => {
       open={modal}
       onClose={() => dispatch(setModal(false, 'none'))}
     >
-      <section className="menu">
-        <ModalHeader />
-        <MobileMenu />
-        <Contact />
+      <div className="mobile">
+        <section className="menu">
+          <ModalHeader />
+          <MobileMenu />
+          <Contact />
+        </section>
+      </div>
 
-      </section>
+      <div className="desktop">
+        <section className="menu">
+          <div className="menu__modal-desktop">
+            <ModalHeader />
+            <Contact />
+          </div>
+        </section>
+      </div>
 
     </div>
   );
