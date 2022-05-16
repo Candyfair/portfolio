@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux';
 
 import PuffLoader from 'react-spinners/PuffLoader';
 
+// EmailJS
 import emailjs from '@emailjs/browser';
 
 import './style.scss';
