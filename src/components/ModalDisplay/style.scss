@@ -16,11 +16,13 @@
 @media only screen and (min-width: $desktop) {
   .menu {
     background-color: $shadow;
+    z-index: 1;
 
     &__modal-desktop {
       position: relative;
       top: 50%;
       transform: translateY(-50%);
+      z-index: 50;
     }
   }
 }

@@ -26,8 +26,8 @@ const ModalDisplay = () => {
       </div>
 
       <div className="desktop">
-        <section className="menu">
-          <div className="menu__modal-desktop">
+        <section className="menu" onClick={() => dispatch(setModal(false, 'none'))}>
+          <div className="menu__modal-desktop" onClick={(e) => e.stopPropagation()}>
             <ModalHeader />
             <Contact />
           </div>

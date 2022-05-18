@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import { useSelector } from 'react-redux';
 
+// Loader
 import PuffLoader from 'react-spinners/PuffLoader';
 
 // EmailJS
