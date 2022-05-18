@@ -120,5 +120,10 @@
   background-color: $tint4;
 }
 
-
+// Tablet (identify if it's a touch-like mobile device)
+// @media only screen and (min-width: $desktop) and (max-width: 1024px) and (hover: none) and (pointer: coarse){
+//   .story__timeline__container {
+//     width: 400px;
+//   }
+// }
 

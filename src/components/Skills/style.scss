@@ -93,7 +93,8 @@
       padding: 20px;
       border-radius: 20px;
       max-width: 350px;
-      height: 480px;
+      min-height: 450px;
+      max-height: fit-content;
       margin: $spacer;
       flex: 1;
     }
