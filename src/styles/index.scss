@@ -1,5 +1,6 @@
 @use 'reset';
-@use 'vars';
+// @use 'vars';
+@import '../styles/vars';
 
 @font-face {
   font-family: 'Inter';
@@ -52,19 +53,19 @@
 body {
   font-family: 'Inter', sans-serif;
   font-weight: 300;
-  background: linear-gradient(180deg, vars.$background 0%, vars.$background-transparent 100%);
+  background: linear-gradient(180deg, $background 0%, $background-transparent 100%);
   min-width: 100%;
 }
 
 // General rule for mobile & tablet display
-@media only screen and (max-width: vars.$mobile) {
+@media only screen and (max-width: $mobile) {
   .desktop {
     display: none;
   }
 }
 
 // General rule for desktop display
-@media only screen and (min-width: vars.$desktop) {
+@media only screen and (min-width: $desktop) {
   .mobile {
     display: none;
   }

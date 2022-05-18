@@ -54,13 +54,15 @@
 @media only screen and (min-width: $desktop) {
   .about-wrapper {
     @include flexCenter(center, center, row);
+    margin: 0 auto;
     margin-bottom: 40px;
+    max-width: $desktop-content;
   }
 
   .about {
 
     &__photo {
-      width: 420px;
+      max-width: 420px;
     }
 
     &__presentation {

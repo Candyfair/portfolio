@@ -21,11 +21,11 @@ const ModalHeader = () => {
         </div>
         <div className="desktop">
           <FontAwesomeIcon
-              icon={faXmark}
-              size="xl"
-              fixedWidth
-              onClick={() => dispatch(setModal(false, 'none'))}
-            />
+            icon={faXmark}
+            size="xl"
+            fixedWidth
+            onClick={() => dispatch(setModal(false, 'none'))}
+          />
         </div>
       </span>
     </div>
