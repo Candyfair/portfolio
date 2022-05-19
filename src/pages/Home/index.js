@@ -1,3 +1,5 @@
+import './style.scss';
+
 import Intro from 'src/components/Intro';
 import Skills from '../../components/Skills';
 import LatestWork from '../../components/LatestWork';
@@ -15,12 +17,12 @@ const Home = () => (
 
     <section className="work">
       {/* Mobile */}
-      <div className="mobile">
+      <div className="portfolio-mobile">
         <LatestWork />
       </div>
 
       {/* Desktop */}
-      <div className="desktop">
+      <div className="portfolio-desktop">
         <Portfolio />
 
       </div>

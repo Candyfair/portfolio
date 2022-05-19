@@ -1,0 +1,21 @@
+@import '../../styles/vars';
+
+.portfolio-mobile {
+  display: block;
+}
+
+.portfolio-desktop {
+  display: none;
+}
+
+// Tablet & Desktop
+@media only screen and (min-width: $mobile) {
+  .portfolio-mobile {
+    display: none;
+  }
+
+  .portfolio-desktop {
+    display: block;
+  }
+
+}

@@ -5,8 +5,27 @@
   cursor: pointer;
 }
 
+// Mobile 
+@media only screen and (max-width: 599px) {
+  .mobile-menu-show {
+    display: block;
+  }
+
+  .desktop-menu-show {
+    display: none;
+  }
+}
+
 // Desktop
 @media only screen and (min-width: 600px) {
+  .mobile-menu-show {
+    display: none;
+  }
+
+  .desktop-menu-show {
+    display: block;
+  }
+
   .menu-desktop {
     @include flexCenter(center, center, row);
 

@@ -17,7 +17,7 @@ const Navigation = () => {
   return (
     <>
       {/* MOBILE */}
-      <nav className="mobile">
+      <nav className="mobile-menu-show">
         <span className="menu-icon">
           <FontAwesomeIcon
             icon={faEllipsisVertical}
@@ -30,7 +30,7 @@ const Navigation = () => {
       </nav>
 
       {/* DESKTOP */}
-      <div className="desktop">
+      <div className="desktop-menu-show">
 
         <nav className="menu-desktop">
 

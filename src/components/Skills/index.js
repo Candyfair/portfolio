@@ -33,7 +33,7 @@ const Skills = () => {
 
   return (
     <section className="skills">
-      <div className="mobile">
+      <div className="skills-tablet-mini">
         <Swiper
           {...params}
           spaceBetween={40}
@@ -79,7 +79,7 @@ const Skills = () => {
         </Swiper>
       </div>
 
-      <div className="desktop">
+      <div className="skills-tablet-maxi">
 
         <div className="skills">
           <article className="skills__block">
