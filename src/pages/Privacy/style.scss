@@ -1,0 +1,11 @@
+@import '../../styles/vars';
+@import '../../styles/mixins';
+
+.privacy {
+  @include flexCenter(flex-start, center, column);
+
+  &__title {
+    
+  }
+
+}

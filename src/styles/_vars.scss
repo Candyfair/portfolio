@@ -4,14 +4,14 @@ $spacer: 1rem;
 // Colors
 $white: hsl(0, 0%, 100%);
 $background: hsl(240, 62%, 88%);
-$background-transparent: hsl(240, 62%, 88%, 0.1);
+$background-transparent: hsla(240, 62%, 88%, 0.1);
 $story-bg: hsl(249, 55%, 80%);
 $text: hsl(201, 52%, 16%);
 $primary: hsl(12, 87%, 60%);
 $primary-dark: hsl(12, 87%, 50%);
 $secondary: hsl(178, 96%, 27%);
-$modal-background: hsl(0, 0%, 0%, 0.3);
-$shadow: hsl(0, 0%, 0%, 0.4);
+$modal-background: hsla(0, 0%, 0%, 0.3);
+$shadow: hsla(0, 0%, 0%, 0.4);
 
 // Timeline colors
 $tint1: hsl(308, 100%, 88%);

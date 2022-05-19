@@ -1,6 +1,7 @@
 @use 'reset';
 // @use 'vars';
 @import '../styles/vars';
+@import '../styles/mixins';
 
 @font-face {
   font-family: 'Inter';
@@ -55,6 +56,42 @@ body {
   font-weight: 300;
   background: linear-gradient(180deg, $background 0%, $background-transparent 100%);
   min-width: 100%;
+}
+
+// Cookie banner
+.cookies {
+  @include flexCenter(center, center, row);
+
+  &__img {
+    padding: 8px;;
+  }
+
+  &__text {
+    text-align: justify;
+
+    &__title {
+      font-weight: 700;
+      font-size: 1.2rem;
+      line-height: 1.5;
+    }
+
+    &__paragraph {
+      line-height: 1.3;
+    }
+
+    &__link-icon {
+      margin-left: 5px;
+    }
+
+    &__link {
+      text-decoration: underline;
+      font-weight: 700;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 // General rule for mobile & tablet display
