@@ -11,7 +11,7 @@ const ModalHeader = () => {
   return (
     <div className="modal-header">
       <span className="modal-header__arrow">
-        <div className="mobile">
+        <div className="mobile-menu-show">
           <FontAwesomeIcon
             icon={faAngleLeft}
             size="xl"
@@ -19,7 +19,7 @@ const ModalHeader = () => {
             onClick={() => dispatch(setModal(false, 'none'))}
           />
         </div>
-        <div className="desktop">
+        <div className="desktop-menu-show">
           <FontAwesomeIcon
             icon={faXmark}
             size="xl"
