@@ -72,3 +72,24 @@
   }
 
 }
+
+// Small tablets (identify if it's a touch-like mobile device)
+@media only screen and (min-width: $mobile) and (max-width: 800px) and (hover: none) and (pointer: coarse){
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+
+  .about-wrapper {
+    @include flexCenter(center, center, column);
+  }
+
+  .about {
+    &__photo {
+     max-width: 300px; 
+    }
+  }
+
+}
