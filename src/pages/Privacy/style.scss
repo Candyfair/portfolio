@@ -2,10 +2,44 @@
 @import '../../styles/mixins';
 
 .privacy {
-  @include flexCenter(flex-start, center, column);
+  @include flexCenter(center, center, column);
 
   &__title {
-    
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: $spacer;
   }
 
+  &__subtitle {
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-top: $spacer;
+    margin-bottom: $spacer;
+  }
+
+  &__text {
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: $spacer;
+  }
+
+  &__link {
+    font-weight: 700;
+    
+    &:hover {
+      text-decoration: underline;
+    } 
+  }
+
+}
+
+// Desktop
+@media only screen and (min-width: $desktop) {
+  .privacy {
+    @include flexCenter(flex-start, flex-start, column);
+
+    max-width: $desktop-content;
+    margin: 0 auto;
+
+  }
 }
