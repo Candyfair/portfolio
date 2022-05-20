@@ -27,6 +27,10 @@ const Privacy = () => (
       You can opt out of having cookies from Statcounter placed on your device by visiting <a href="https://statcounter.com/about/set-refusal-cookie/?delete=1" className="privacy__link" target="_blank" rel="noreferrer noopener">this page</a> and following the instructions. 
     </p>
 
+    <p className="privacy__text">
+      If you have any question, please contact me at contact@candicefairand.com or via the contact form in the menu of this website. 
+    </p>
+
   </section>
 );
 

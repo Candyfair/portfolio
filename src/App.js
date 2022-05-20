@@ -29,7 +29,6 @@ const App = () => (
 
       {/* Cookie banner */}
       <CookieConsent
-        debug // à retirer lors du passage en production
         location="bottom"
         style={{ background: 'hsla(0, 0%, 0%, 0.7)', justifyContent:'center' }}
         buttonText="I understand"
