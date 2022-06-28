@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
+import crowdfunding from '../../assets/images/crowdfunding2-project.jpg';
 import orent from '../../assets/images/orent-project.jpg';
 import faq from '../../assets/images/faq-project.jpg';
-import order from '../../assets/images/order-project.jpg';
 
 const Portfolio = () => {
   const goToGithub = () => {
@@ -25,6 +25,24 @@ const Portfolio = () => {
 
       {/* PORTFOLIO CONTENT */}
       <div className="projects__details-content">
+
+        {/* Project CROWDFUNDING */}
+        <article className="projects__details">
+          <Link to="/portfolio/crowdfunding">
+            <img src={crowdfunding} alt="Screenshots for Crowdfunding project" className="projects__details__img" />
+          </Link>
+
+          <div className="projects__details__text">
+            <div>
+              <h2 className="projects__details__text__title">Crowdfund</h2>
+              <p className="projects__details__text__desc">A crowdfunding product page built with React/Redux</p>
+            </div>
+            <Link to="/portfolio/crowdfunding" className="projects__details__text__link">
+              Read Story {'>'}
+            </Link>
+          </div>
+        </article>
+
         {/* Project O'RENT */}
         <article className="projects__details">
           <Link to="/portfolio/orent">
@@ -71,35 +89,6 @@ const Portfolio = () => {
           </div>
         </article>
 
-        {/* Project FAQ component */}
-        <article className="projects__details">
-          <a href="https://order-summary-component-green.vercel.app/" className="projects__details__text__link" target="_blank" rel="noreferrer noopener">
-            <img src={order} alt="Screenshots for order component" className="projects__details__img" />
-          </a>
-
-          <div className="projects__details__text">
-            <div>
-              <h2 className="projects__details__text__title">Order summary component</h2>
-              <p className="projects__details__text__desc">A responsive web app for an order summary component</p>
-            </div>
-
-            <div className="projects__details__links-group">
-              <a href="https://order-summary-component-green.vercel.app/" className="projects__details__text__link" target="_blank" rel="noreferrer noopener">
-                View project {'>'}
-              </a>
-              <span className="projects__details__text__icon">
-                <a href="https://github.com/Candyfair/order-summary-component" target="_blank" rel="noreferrer noopener">
-                  <FontAwesomeIcon
-                    icon={faGithub}
-                    size="lg"
-                    fixedWidth
-                  />
-                </a>
-              </span>
-            </div>
-          </div>
-        </article>
-
         {/* BUTTON */}
         <button
           type="button"
@@ -110,7 +99,6 @@ const Portfolio = () => {
         </button>
 
       </div>
-
 
     </section>
   );

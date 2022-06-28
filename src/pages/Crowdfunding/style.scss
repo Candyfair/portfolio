@@ -1,0 +1,21 @@
+.link {
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.italic {
+  font-style: italic;
+}
+
+.crowdfunding {
+
+  &__list {
+    // list-style: inside;
+    margin-left: 20px;
+    list-style-type: disc;
+    text-align: left;
+  }
+}

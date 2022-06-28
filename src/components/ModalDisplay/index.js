@@ -27,7 +27,7 @@ const ModalDisplay = () => {
 
       <div className="desktop">
         <section className="menu" onClick={() => dispatch(setModal(false, 'none'))}>
-          <div className="menu__modal-desktop" onClick={(e) => e.stopPropagation()}>
+          <div className="menu__modal-desktop" onClick={(e) => e.stopPropagation()}> {/* Prevents closure when clicking in the wrapper */}
             <ModalHeader />
             <Contact />
           </div>

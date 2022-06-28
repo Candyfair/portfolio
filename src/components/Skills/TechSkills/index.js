@@ -1,6 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBookmark } from '@fortawesome/free-solid-svg-icons';
-
 const TechSkills = () => (
   <article>
     <h2 className="skills__title">
@@ -12,7 +9,7 @@ const TechSkills = () => (
 
     {/* Skill details */}
     <div className="skills__details">
-      HTML, CSS, SASS, JavaScript, Node.js, React, Redux, Next.js, PostGreSQL, Git+Github, VSCode, Notion
+      HTML, CSS, SASS, JavaScript, Node.js, React, Redux, PostGreSQL, Git+Github, VSCode, Notion
     </div>
 
     {/* UI/UX Design */}

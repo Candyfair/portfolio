@@ -5,14 +5,14 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
-import homeSm from '../../assets/images/orent-home-sm.jpg';
-import homeXl from '../../assets/images/orent-home-xl.jpg';
-import mapSm from '../../assets/images/orent-map-sm.jpg';
-import mapXl from '../../assets/images/orent-map-xl.jpg';
-import mobileSm from '../../assets/images/orent-responsive-sm.png';
-import mobileXl from '../../assets/images/orent-responsive-xl.png';
-import errorSm from '../../assets/images/orent-404-sm.jpg';
-import errorXl from '../../assets/images/orent-404-xl.jpg';
+import homeSm from '../../assets/images/projects/orent-home-sm.jpg';
+import homeXl from '../../assets/images/projects/orent-home-xl.jpg';
+import mapSm from '../../assets/images/projects/orent-map-sm.jpg';
+import mapXl from '../../assets/images/projects/orent-map-xl.jpg';
+import mobileSm from '../../assets/images/projects/orent-responsive-sm.png';
+import mobileXl from '../../assets/images/projects/orent-responsive-xl.png';
+import errorSm from '../../assets/images/projects/orent-404-sm.jpg';
+import errorXl from '../../assets/images/projects/orent-404-xl.jpg';
 
 const Orent = () => (
   <section className="project">
@@ -137,7 +137,7 @@ const Orent = () => (
     {/* LESSONS LEARNED */}
     <h2 className="project__subtitle">Lessons Learned</h2>
     <p className="project__text">
-      Using a UI framework can be an interesting option, but only if the framework is already mastered and the project doesn't require a lot of customisation, as
+      Using a UI framework can be an interesting option, but only if the framework is already mastered and the project doesn't require a lot of customisation.
     </p>
     <p className="project__text">
       Also, working in a team - even a small one - requires a good level of communication, regular updates during SCRUM meetings and a proper management of git branches to avoid duplicates or code losses.

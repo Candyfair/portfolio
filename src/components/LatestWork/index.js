@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 import './style.scss';
 
-import orent from '../../assets/images/orent-home.jpg';
+import project from '../../assets/images/crowdfunding-project.jpg';
 
 const LatestWork = () => (
   <div className="work__wrapper">
@@ -11,15 +11,15 @@ const LatestWork = () => (
     {/* Projet O'RENT */}
     <div className="work__project">
       <div className="work__project__text">
-        <h2 className="work__project__text__title">O'Rent</h2>
+        <h2 className="work__project__text__title">Crowdfund</h2>
         <p className="work__project__text__subtitle">
-          Vacation rental marketplace<br />
-          JavaScript/React
+          Crowdfunding Product Page<br />
+          React/Redux
         </p>
       </div>
 
-      <Link to="/portfolio/orent">
-        <img src={orent} alt="Project O'Rent" className="work__project__img" />
+      <Link to="/portfolio/crowdfunding">
+        <img src={project} alt="Project Crowdfunding" className="work__project__img" />
       </Link>
 
     </div>
