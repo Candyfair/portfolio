@@ -4,6 +4,7 @@ import Intro from 'src/components/Intro';
 import Skills from '../../components/Skills';
 import LatestWork from '../../components/LatestWork';
 import Portfolio from '../Portfolio';
+import NewsFeed from '../../components/NewsFeed';
 
 const Home = () => (
   <>
@@ -26,7 +27,10 @@ const Home = () => (
         <Portfolio />
 
       </div>
+    </section>
 
+    <section className="newsfeed">
+      <NewsFeed />
     </section>
   </>
 );

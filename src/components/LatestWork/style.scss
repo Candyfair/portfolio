@@ -45,6 +45,10 @@
     }
   }
 
+  &__more-wrapper {
+    padding: 33px 0;
+  }
+
   &__more {
     background-color: $primary;
     border: none;
@@ -53,7 +57,7 @@
     color: $white;
     font-weight: 700;
     font-size: 1rem;
-    margin: 33px 0;
+    margin-top: 33px;
   }
 
 }
