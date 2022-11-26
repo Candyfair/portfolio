@@ -24,9 +24,11 @@ const LatestWork = () => (
 
     </div>
 
-    <Link to="/portfolio">
-      <button type="button" className="work__more">Check my portfolio</button>
-    </Link>
+    <div className="work__more-wrapper">
+      <Link to="/portfolio">
+        <button type="button" className="work__more">Check my portfolio</button>
+      </Link>
+    </div>
   </div>
 );
 

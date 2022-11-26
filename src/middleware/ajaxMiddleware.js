@@ -17,6 +17,8 @@ export default (store) => (next) => (action) => {
       // fetch 5 posts, including related tags and authors
       api.posts.browse({
         filter: 'tag:news',
+        limit: 5,
+        order: 'published_at DESC',
       })
         .then((posts) => {
           posts.forEach((post) => {

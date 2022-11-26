@@ -60,6 +60,7 @@
     "axios": "^1.2.0",
     "dotenv": "^16.0.1",
     "emailjs": "^4.0.0",
+    "moment": "^2.29.4",
     "prop-types": "*",
     "react": "*",
     "react-cookie-consent": "^7.4.1",
