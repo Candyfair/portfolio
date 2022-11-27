@@ -1,3 +1,4 @@
+/* eslint-disable react/self-closing-comp */
 import { useSelector } from 'react-redux';
 import moment from 'moment';
 

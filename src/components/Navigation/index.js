@@ -67,6 +67,7 @@ const Navigation = () => {
             <li><Link to="/">Skills</Link></li>
             <li><Link to="/portfolio">Portfolio</Link></li>
             <li><Link to="/about">About</Link></li>
+            <li><a href="https://candygetshandy.com/ux-coding/" target="_blank" rel="noreferrer noopener">Blog</a></li>
           </ul>
 
           {/* Contact icon */}

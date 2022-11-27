@@ -21,9 +21,9 @@ export default (store) => (next) => (action) => {
         order: 'published_at DESC',
       })
         .then((posts) => {
-          posts.forEach((post) => {
-            console.log(post.published_at, post.title);
-          });
+          // posts.forEach((post) => {
+          //   console.log(post.published_at, post.title);
+          // });
 
           const newsAction = receivedNews(posts);
           store.dispatch(newsAction);
