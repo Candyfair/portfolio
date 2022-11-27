@@ -30,7 +30,7 @@ const NewsFeed = () => {
 
       <div className="newsfeed__legend">
         <p>
-          News feed from my blog - <a href="https://candygetshandy.com" target="_blank" rel="noreferrer noopener">read more</a>
+          News feed from my blog - <a href="https://candygetshandy.com/how-i-used-the-ghost-content-api-to-build-a-twitter-like-feed-on-my-portfolio/" target="_blank" rel="noreferrer noopener">read more</a>
         </p>
       </div>
 
