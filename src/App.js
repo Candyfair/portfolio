@@ -14,6 +14,7 @@ import CookieConsent from 'react-cookie-consent';
 import Layout from 'src/components/Layout';
 import ScrollTop from 'src/components/ScrollTop';
 import ModalDisplay from './components/ModalDisplay';
+import NotFound from './components/NotFound';
 
 import { fetchNews } from './redux/actions/news';
 
@@ -76,6 +77,7 @@ const App = () => {
           <Route path="/portfolio/crowdfunding" element={<Crowdfunding />} />
           <Route path="/about" element={<About />} exact />
           <Route path="/privacy" element={<Privacy />} exact />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <ModalDisplay />
       </Layout>

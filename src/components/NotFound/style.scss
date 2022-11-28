@@ -1,0 +1,62 @@
+@import '../../styles/vars';
+@import '../../styles/mixins';
+
+.error {
+  @include flexCenter(center, center, column);
+  font-family: 'Inconsolata', monospace;
+
+  &__text-wrapper {
+    @include flexCenter(center, center, column);
+    text-align: center;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 12px;
+    text-shadow: 3px 3px 0px $tint1;
+  }
+
+  &__subtitle {
+    font-weight: 800;
+    font-size: 1.7rem;
+    margin-bottom: 12px;
+    text-shadow: 3px 3px 0px $tint4;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    text-decoration: underline;
+  }
+}
+
+// Tablet
+@media only screen and (min-width: $mobile) {
+  .error {
+    @include flexCenter(space-evenly, center, row);
+
+    &__text-wrapper {
+      padding-right: $spacer;
+    }
+  }
+}
+
+// Desktop
+@media only screen and (min-width: $mobile) {
+  .error {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    &__text-wrapper {
+      max-width: 500px;
+    }
+
+  }
+}
+
