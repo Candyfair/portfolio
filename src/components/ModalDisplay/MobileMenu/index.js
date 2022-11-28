@@ -55,6 +55,15 @@ const MobileMenu = () => {
         <h2
           className="menu-elem-titles__link"
           onClick={() => {
+            window.location.href = 'https://candygetshandy.com/ux-coding/';
+          }}
+        >
+          Blog
+        </h2>
+
+        <h2
+          className="menu-elem-titles__link"
+          onClick={() => {
             dispatch(setModal(true, 'contact'));
           }}
         >
